@@ -1,0 +1,19 @@
+.summary-container {
+  text-align: center;
+  /* Styles inherited from .card in App.css */
+}
+
+.summary-container h2 {
+  margin-bottom: 15px;
+}
+
+.total-spending {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.total-spending span {
+  color: #28a745; /* A green color for positive spending */
+}
