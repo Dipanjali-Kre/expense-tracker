@@ -1,0 +1,70 @@
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.expense-item:last-child {
+  border-bottom: none;
+}
+
+.expense-details {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 15px;
+}
+
+.expense-category {
+  font-weight: bold;
+  color: #34495e;
+  flex-basis: 30%; /* Adjust as needed */
+}
+
+.expense-amount {
+  color: #e74c3c;
+  font-weight: bold;
+  flex-basis: 30%; /* Adjust as needed */
+  text-align: right;
+}
+
+.expense-date {
+  color: #7f8c8d;
+  font-size: 0.9em;
+  flex-basis: 30%; /* Adjust as needed */
+  text-align: right;
+}
+
+.expense-item .delete-button {
+  margin-left: 20px;
+  padding: 8px 12px;
+  font-size: 0.9em;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .expense-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .expense-category, .expense-amount, .expense-date {
+    flex-basis: auto;
+    width: 100%;
+    text-align: left;
+  }
+  .expense-amount {
+    font-size: 1.1em;
+  }
+  .expense-item .delete-button {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .expense-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
