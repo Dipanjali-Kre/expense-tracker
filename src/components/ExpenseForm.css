@@ -1,0 +1,24 @@
+.expense-form-container {
+  /* Styles inherited from .card in App.css */
+}
+
+.expense-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.expense-form .form-group {
+  margin-bottom: 15px;
+}
+
+.expense-form .form-group label {
+  font-weight: 600;
+  color: #444;
+}
+
+.expense-form .add-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
